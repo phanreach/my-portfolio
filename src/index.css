@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts (loaded from Google Fonts in index.html) */
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display:
+    "Bricolage Grotesque", "Public Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Navy-tinted neutrals taken from your CV. Every gray-* class on the site picks these up. */
+  --color-gray-50: #f6f7fa;
+  --color-gray-100: #eceef3;
+  --color-gray-200: #dde0e8;
+  --color-gray-300: #c3c8d4;
+  --color-gray-400: #9199ab;
+  --color-gray-500: #6b7488;
+  --color-gray-600: #505a6e;
+  --color-gray-700: #3b445a;
+  --color-gray-800: #272f44;
+  --color-gray-900: #1b2236;
+  --color-gray-950: #111626;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+::selection {
+  background: #fcd34d;
+  color: #1b2236;
+}
+
+/* One page-load sequence for the hero */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal {
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.reveal-1 {
+  animation-delay: 90ms;
+}
+.reveal-2 {
+  animation-delay: 180ms;
+}
+.reveal-3 {
+  animation-delay: 270ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    animation: none;
+  }
+}
