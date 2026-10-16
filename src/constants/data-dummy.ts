@@ -24,7 +24,7 @@ export const PROFILE = {
   initials: "YN",
   headline: "I build reliable web apps, from the server to the screen.",
   intro:
-    "I'm a full-stack developer who builds web applications end to end: APIs and databases on the back end, responsive and accessible interfaces on the front. I care about clean code, reliable systems, and software that's pleasant to use.",
+    "I'm a developer who builds web applications end to end: APIs and databases on the back end, responsive and accessible interfaces on the front. I care about clean code, reliable systems, and software that's pleasant to use.",
   stack: [
     "React",
     "TypeScript",
@@ -114,8 +114,8 @@ export const EXPERIENCE: ExperienceEntry[] = [
     role: "Frontend Developer Intern",
     company: "SunTel Technology Cambodia",
     type: "Internship",
-    startDate: "2025-08-04",
-    endDate: "2025-11-04",
+    startDate: "2025-07-04",
+    endDate: "2025-10-04",
     highlights: [
       "Developed modern, responsive interfaces and integrated APIs.",
       "Completed a 3-month internship focusing on front-end optimization.",
