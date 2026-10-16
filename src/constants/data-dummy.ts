@@ -17,6 +17,7 @@ import nanningTeam from "../assets/nanning-team.jpg";
 import denTeeth1 from "../assets/denteeth1.png";
 import docker from "../assets/docker.png";
 import springboot from "../assets/springboot.webp";
+import cipr from "../assets/cipr.png";
 
 export const PROFILE = {
   name: "Your Name",
@@ -200,8 +201,32 @@ export const UNI_PROJECTS: UniProjectEntry[] = [
       "Smart appointment management",
     ],
     status: {
-      label: "In development",
-      detail: "The UI, documentation, and AI training dataset are complete.",
+      label: "Completed",
+      detail:
+        "The project is finished. The backend server has been stopped because it was only a university project, so the website shows the interface only, without working features.",
+    },
+    screens: [{ src: denTeeth1, title: "DenTeeth Interface" }],
+    website: { label: "DenTeeth", href: "https://denteeth.pages.dev/" },
+  },
+  {
+    title: "Products Recommender",
+    tagline:
+      "AI-Driven Customer Insights and Hyper Personalized Recommendations",
+    kind: "Internship group project",
+    description: [
+      "A hybrid recommendation engine combining collaborative filtering, content-based filtering, and basic behavioral analytics to create more accurate customer profiles. The system will analyze factors such as purchase timing patterns, product category preferences to generate recommendations.",
+    ],
+    features: [
+      "Hybrid Recommendation Engine that combines collaborative filtering and content-based filtering",
+      "Behavioral Analytics by analyzes purchase history",
+      "Integrates user-item interactions, product description similarity, and customer value scores.",
+      "delivering instant product suggestions to improve user engagement",
+      "Provides a user-friendly interface",
+    ],
+    status: {
+      label: "Completed",
+      detail:
+        "The project is finished. The backend server has been stopped because it was only a university project, so the interface is shown without working features.",
     },
     highlight: {
       label: "Pitched in China, 2025",
@@ -211,7 +236,10 @@ export const UNI_PROJECTS: UniProjectEntry[] = [
       photo: nanningTeam,
       caption: "Our team in Nanning, China",
     },
-    screens: [{ src: denTeeth1, title: "DenTeeth Dashboard" }],
-    website: { label: "Denteeth", href: "https://denteeth.pages.dev/" },
+    screens: [{ src: cipr, title: "CIPR UI" }],
+    website: {
+      label: "Products Recommender",
+      href: "https://cipr-ecommerce.vercel.app/",
+    },
   },
 ];
