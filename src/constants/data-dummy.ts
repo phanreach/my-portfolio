@@ -156,6 +156,10 @@ export const CONTACT = {
     label: "github.com/phanreach",
     href: "https://github.com/phanreach",
   },
+  linkedin: {
+    label: "linkedin.com/in/reachphan",
+    href: "https://www.linkedin.com/in/reachphan/",
+  },
   message:
     "I'm open to full-stack roles and freelance projects. Email is the fastest way to reach me.",
 };

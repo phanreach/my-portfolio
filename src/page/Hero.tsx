@@ -3,10 +3,11 @@ import { PROFILE } from "../constants/data-dummy";
 export default function Hero() {
   return (
     <section
-      id="home"
-      className="mx-auto flex min-h-[calc(100svh-4rem)] max-w-screen-xl items-center
+      id="about"
+      className="relative mx-auto flex min-h-[calc(100svh-4rem)] max-w-screen-xl items-center
         px-4 py-16 sm:px-6 lg:px-8 lg:py-24"
     >
+      <span id="home" aria-hidden="true" className="absolute top-0" />
       <div className="grid w-full items-center gap-16 lg:grid-cols-[1.25fr_1fr] lg:gap-20">
         {/* Text */}
         <div>

@@ -1,5 +1,5 @@
 import { CONTACT } from "../constants/data-dummy"; // adjust the path to where you save contact.ts
-
+import emailIcon from "../assets/email.png";
 const LINKS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -12,7 +12,7 @@ const linkStyles = `text-gray-300 underline-offset-4 transition-colors hover:tex
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:py-10 lg:px-8">
         <div className="max-w-3xl">
           <h2 className="text-xl font-semibold">
@@ -22,6 +22,11 @@ export default function Footer() {
             {CONTACT.message}
           </p>
           <a href={`mailto:${CONTACT.email}`} className="text-xl">
+            <img
+              src={emailIcon}
+              alt="Email"
+              className="inline-block h-6 w-6 mr-2"
+            />
             {CONTACT.email}
           </a>
         </div>
