@@ -172,6 +172,7 @@ export const PROJECTS: ProjectEntry[] = [
     kind: "Freelance project",
     role: "Frontend Developer",
     startDate: "2025-11-20",
+    endDate: "2026-04-20",
     highlights: [
       "Built the public website for visitors, including the landing page.",
       "Built the admin interface and integrate with API where admins manage content, events, and users.",
